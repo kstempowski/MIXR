@@ -1,0 +1,7 @@
+<div><app-bio [tempoUser]="activeUser"></app-bio></div>
+
+<div><app-favorites [jams]="activeUsersFaves">  </app-favorites></div>
+
+<div *ngIf="activeUser">
+<app-connection [userNum]="activeUser.userPk"> </app-connection>
+</div>
